@@ -37,28 +37,41 @@ public class Graphics extends JPanel {
         grphcs.fillOval(90, 300, 100, 100);
         grphcs.setColor(Color.pink);
         grphcs.fillOval(290, 300, 100, 100);
-        
-        grphcs.setColor(Color.cyan);
-        grphcs.drawLine(60, 450, 60, 600);
-        grphcs.setColor(Color.pink);
-        grphcs.drawLine(175, 450, 175, 600);
-        grphcs.setColor(Color.cyan);
-        grphcs.drawLine(290, 450, 290, 600);
-        grphcs.setColor(Color.pink);
-        grphcs.drawLine(405, 450, 405, 600);
-        
-        grphcs.setColor(Color.cyan);
-        grphcs.drawLine(60, 450, 405, 450);
-        grphcs.setColor(Color.pink);
-        grphcs.drawLine(60, 480, 405, 480);
-        grphcs.setColor(Color.cyan);
-        grphcs.drawLine(60, 510, 405, 510);
-        grphcs.setColor(Color.pink);
-        grphcs.drawLine(60, 540, 405, 540);
-       
-       
-       
 
+//        grphcs.setColor(Color.cyan);
+//        grphcs.drawLine(60, 450, 60, 600);
+//        grphcs.setColor(Color.pink);
+//        grphcs.drawLine(175, 450, 175, 600);
+//        grphcs.setColor(Color.cyan);
+//        grphcs.drawLine(290, 450, 290, 600);
+//        grphcs.setColor(Color.pink);
+//        grphcs.drawLine(405, 450, 405, 600);
+        grphcs.setColor(Color.pink);
+        for (int i = 60; i < this.getWidth(); i += 115) {
+            grphcs.drawLine(i, 450, i, 600);
+        }
+//        grphcs.setColor(Color.cyan);
+//        grphcs.drawLine(60, 450, 405, 450);
+//        grphcs.setColor(Color.pink);
+//        grphcs.drawLine(60, 480, 405, 480);
+//        grphcs.setColor(Color.cyan);
+//        grphcs.drawLine(60, 510, 405, 510);
+//        grphcs.setColor(Color.pink);
+//        grphcs.drawLine(60, 540, 405, 540);
+        grphcs.setColor(Color.cyan);
+        for (int i = 450; i < this.getHeight(); i += 30) {
+            grphcs.drawLine(60, i, 405, i);
+        }
+        
+        grphcs.setColor(Color.cyan);
+        for (int i = 0; i < this.getHeight(); i += 20) {
+            grphcs.drawLine(0, 0, this.getWidth(), i);
+        }
+        
+        grphcs.setColor(Color.pink);
+        for (int i = 0; i < this.getHeight(); i += 20) {
+            grphcs.drawLine(0, 0, i ,this.getHeight());
+        }
     }
 
 }
